@@ -1,7 +1,11 @@
-//5
+//6
 
 function yearOfBirth(age) {
-    return 2018 - age;
+    try {let yob = 2018 - age;
+        if (yob > 2018) throw new Error("Not a valid age!")}
+    catch (e) {
+        console.log(e);
+    }
 }
 
 function whoAmI(name, age) {
