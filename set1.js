@@ -1,4 +1,4 @@
-//6
+//7
 
 function yearOfBirth(age) {
     try {let yob = 2018 - age;
@@ -9,10 +9,15 @@ function yearOfBirth(age) {
 }
 
 function whoAmI(name, age) {
-    const yob = yearOfBirth(age);
-    console.log(`Hi, my name is ${name} and I'm ${yob} years old`);
-    const yearOfBirth = 2018-age;
-    console.log(`I was born in ${yearOfBirth}`);
+
+    if (!name || !age) {
+        console.error("Arguments not valid");
+    } else {
+        const yob = yearOfBirth(age);
+        console.log(`Hi, my name is ${name} and I'm ${yob} years old`);
+        const yearOfBirth = 2018-age;
+        console.log(`I was born in ${yearOfBirth}`);
+    }
 }
 
 whoAmI('Dylan', 23);
