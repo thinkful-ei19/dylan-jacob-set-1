@@ -1,7 +1,7 @@
-//2
+//3
 
-function whoAmI() {
-    console.log(`Hi, my name is Dylan and I'm 23 years old`);
+function whoAmI(name, age) {
+    console.log(`Hi, my name is ${name} and I'm ${age} years old`);
 }
 
-whoAmI();
+whoAmI('Dylan', 23);
